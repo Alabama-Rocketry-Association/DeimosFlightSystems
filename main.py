@@ -104,7 +104,7 @@ async def commands():
         await asyncio.sleep(1)
 
 async def main(methods:list):
-    await asyncio.gather(*[methods])
+    await asyncio.gather(*methods)
 
 if __name__ == "__main__":
     radio = z9c(dev="/dev/ttyUSB0", baud=115200)
